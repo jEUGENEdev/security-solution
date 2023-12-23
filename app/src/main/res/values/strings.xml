@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SecuritySolution</string>
+    <string name="greeting_login">С возвращением!</string>
+    <string name="username_field_hint">Username</string>
+    <string name="password_field_hint">Password</string>
+    <string name="login_btn_hint">Войти</string>
+    <string name="reset_password_hint">Забыли пароль?</string>
+    <string name="no_account_hint">У меня нет аккаунта</string>
+    <string name="reg_btn_hint">Зарегистрироваться</string>
 </resources>
