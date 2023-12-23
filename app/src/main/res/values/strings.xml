@@ -21,4 +21,11 @@
     <string name="input_field_confirm_password_label">Подтверждение пароля</string>
     <string name="input_field_confirm_password_hint">Пароль</string>
     <string name="login_hint_reg">У вас уже есть аккаунт? Войти</string>
+    <string name="greeting_home">Добро пожаловать!</string>
+    <string name="greeting_home_objects">Находите свои объекты</string>
+    <string name="input_field_object_search">Введите название объекта</string>
+    <string name="nav_item_home_hint">Домашняя</string>
+    <string name="nav_item_new_hint">Новый</string>
+    <string name="nav_item_notifications_hint">Уведомления</string>
+    <string name="nav_item_logout_hint">Выйти</string>
 </resources>
