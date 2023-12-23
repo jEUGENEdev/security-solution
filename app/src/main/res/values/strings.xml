@@ -7,4 +7,18 @@
     <string name="reset_password_hint">Забыли пароль?</string>
     <string name="no_account_hint">У меня нет аккаунта</string>
     <string name="reg_btn_hint">Зарегистрироваться</string>
+    <string name="greeting_reg">Регистрация</string>
+    <string name="input_field_first_name_label">Имя</string>
+    <string name="input_field_first_name_hint">Введите ваше имя</string>
+    <string name="input_field_last_name_label">Фамилия</string>
+    <string name="input_field_last_name_hint">Введите фамилию</string>
+    <string name="input_field_username_label">Имя пользователя</string>
+    <string name="input_field_username_hint">Введите имя пользователя</string>
+    <string name="input_field_phone_label">Номер телефона</string>
+    <string name="input_field_phone_hint">Введите номер телефона</string>
+    <string name="input_field_password_label">Пароль</string>
+    <string name="input_field_password_hint">Придумайте пароль</string>
+    <string name="input_field_confirm_password_label">Подтверждение пароля</string>
+    <string name="input_field_confirm_password_hint">Пароль</string>
+    <string name="login_hint_reg">У вас уже есть аккаунт? Войти</string>
 </resources>
