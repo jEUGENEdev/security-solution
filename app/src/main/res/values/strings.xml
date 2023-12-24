@@ -35,4 +35,12 @@
     <string name="input_field_fullname_hint">John Smith</string>
     <string name="profile_input_field_phone_hint">+79100000000</string>
     <string name="save_changes_button">Сохранить изменения</string>
+    <string name="greeting_object_card">Предприятие общепита</string>
+    <string name="input_field_object_name_label">Название объекта</string>
+    <string name="input_field_object_name_hint">Предприятие общепита</string>
+    <string name="input_field_object_address_label">Адрес объекта</string>
+    <string name="input_field_object_address_hint">Россия, г. Краснодар, ул. Красная, д. 0, к. 1</string>
+    <string name="input_field_object_address_cams_host_label">Адрес хоста камер видеонаблюдения</string>
+    <string name="input_field_object_address_cams_host_hint">127.0.0.1:9034</string>
+    <string name="create_object_button">Создать объект</string>
 </resources>
