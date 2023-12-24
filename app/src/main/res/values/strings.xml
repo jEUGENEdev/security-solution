@@ -43,4 +43,5 @@
     <string name="input_field_object_address_cams_host_label">Адрес хоста камер видеонаблюдения</string>
     <string name="input_field_object_address_cams_host_hint">127.0.0.1:9034</string>
     <string name="create_object_button">Создать объект</string>
+    <string name="object_card_enter_hint">Подробнее</string>
 </resources>
