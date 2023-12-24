@@ -1,5 +1,6 @@
 package com.deveugene.securitysolution.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,5 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         this.login = findViewById(R.id.login_button);
         this.reg = findViewById(R.id.login_button_reg);
         this.resetPassword = findViewById(R.id.login_reset_password);
+
+        startActivity(new Intent(this, HomeActivity.class));
     }
 }
