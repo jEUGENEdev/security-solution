@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/profileAvatar"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="@string/app_name"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="@+id/cardView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/homeGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -58,8 +58,8 @@
         android:orientation="horizontal"
         android:weightSum="100"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintStart_toStartOf="@+id/homeGreeting"
+        app:layout_constraintTop_toBottomOf="@+id/homeGreeting">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -79,7 +79,7 @@
                 app:srcCompat="@drawable/search" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/homeSearch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="85"
@@ -100,7 +100,7 @@
             app:cardCornerRadius="50dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/profileSettings"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center|center_horizontal|center_vertical"
@@ -133,9 +133,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/homeHome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
             android:orientation="vertical">
 
@@ -155,9 +159,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/homeOrgNew"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
             android:orientation="vertical">
 
@@ -177,9 +185,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/homeNotifications"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
             android:orientation="vertical">
 
@@ -199,9 +211,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/homeLogout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
             android:orientation="vertical">
 

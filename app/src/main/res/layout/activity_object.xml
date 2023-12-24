@@ -7,7 +7,7 @@
     tools:context=".activity.ObjectActivity">
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/objectCancel"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="7dp"
@@ -26,10 +26,10 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2">
+        app:layout_constraintTop_toBottomOf="@+id/objectCancel">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/objectTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_mono_bold"
@@ -60,6 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollView2">
 
         <EditText
+            android:id="@+id/inputObjectTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -91,6 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView7">
 
         <EditText
+            android:id="@+id/objectAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -125,6 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView8">
 
         <EditText
+            android:id="@+id/objectCamsHostAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -135,7 +138,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/objectSave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
