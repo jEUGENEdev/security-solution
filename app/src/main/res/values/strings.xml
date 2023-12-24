@@ -44,4 +44,5 @@
     <string name="input_field_object_address_cams_host_hint">127.0.0.1:9034</string>
     <string name="create_object_button">Создать объект</string>
     <string name="object_card_enter_hint">Подробнее</string>
+    <string name="watch_cams_object_hint">Смотреть камеры</string>
 </resources>

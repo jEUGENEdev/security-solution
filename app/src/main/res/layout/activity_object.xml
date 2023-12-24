@@ -142,7 +142,7 @@
         android:id="@+id/objectSave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/black"
         android:onClick="clickSaveButton"
         android:padding="20dp"
@@ -154,5 +154,22 @@
         app:layout_constraintEnd_toEndOf="@+id/cardView9"
         app:layout_constraintStart_toStartOf="@+id/cardView9"
         app:layout_constraintTop_toBottomOf="@+id/cardView9" />
+
+    <Button
+        android:id="@+id/objectCamsWatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/black"
+        android:onClick="clickWatchCamsButton"
+        android:padding="20dp"
+        android:text="@string/watch_cams_object_hint"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/objectSave"
+        app:layout_constraintStart_toStartOf="@+id/objectSave"
+        app:layout_constraintTop_toBottomOf="@+id/objectSave" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
