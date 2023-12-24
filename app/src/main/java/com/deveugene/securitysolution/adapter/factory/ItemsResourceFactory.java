@@ -2,8 +2,8 @@ package com.deveugene.securitysolution.adapter.factory;
 
 import com.deveugene.securitysolution.R;
 import com.deveugene.securitysolution.entity.ItemEntity;
-import com.deveugene.securitysolution.entity.Notification;
-import com.deveugene.securitysolution.entity.Organization;
+import com.deveugene.securitysolution.entity.notification.Notification;
+import com.deveugene.securitysolution.entity.organization.Organization;
 
 public interface ItemsResourceFactory {
     static <T extends ItemEntity> int getResource(T entity) {

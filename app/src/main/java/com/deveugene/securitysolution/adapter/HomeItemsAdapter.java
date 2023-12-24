@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.deveugene.securitysolution.R;
 import com.deveugene.securitysolution.adapter.factory.ItemsResourceFactory;
 import com.deveugene.securitysolution.entity.ItemEntity;
-import com.deveugene.securitysolution.entity.Notification;
-import com.deveugene.securitysolution.entity.Organization;
+import com.deveugene.securitysolution.entity.notification.Notification;
+import com.deveugene.securitysolution.entity.organization.Organization;
 
 import java.util.List;
 

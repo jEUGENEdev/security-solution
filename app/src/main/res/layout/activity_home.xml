@@ -105,6 +105,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center|center_horizontal|center_vertical"
                 android:backgroundTint="@color/white"
+                android:onClick="clickProfileSettingsButton"
                 android:scaleType="fitCenter"
                 android:scaleX="1.3"
                 android:scaleY="1.3"
@@ -132,6 +133,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="clickNavHomeButton"
             android:orientation="vertical">
 
             <ImageView
@@ -158,6 +160,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="clickNavNewOrgButton"
             android:orientation="vertical">
 
             <ImageView
@@ -184,6 +187,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="clickNavNotificationsButton"
             android:orientation="vertical">
 
             <ImageView
@@ -210,6 +214,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="clickNavLogoutButton"
             android:orientation="vertical">
 
             <ImageView

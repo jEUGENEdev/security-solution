@@ -1,4 +1,6 @@
-package com.deveugene.securitysolution.entity;
+package com.deveugene.securitysolution.entity.notification;
+
+import com.deveugene.securitysolution.entity.ItemEntity;
 
 public class Notification implements ItemEntity {
     private final String title;

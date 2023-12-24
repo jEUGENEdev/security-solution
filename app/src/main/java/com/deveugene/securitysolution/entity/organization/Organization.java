@@ -1,4 +1,6 @@
-package com.deveugene.securitysolution.entity;
+package com.deveugene.securitysolution.entity.organization;
+
+import com.deveugene.securitysolution.entity.ItemEntity;
 
 public class Organization implements ItemEntity {
     private final String title, address;
