@@ -3,9 +3,11 @@ package com.deveugene.securitysolution.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.deveugene.securitysolution.R;
 
@@ -30,5 +32,14 @@ public class RegActivity extends AppCompatActivity {
         this.confirmPassword = findViewById(R.id.reg_confirm_password);
         this.reg = findViewById(R.id.reg_reg_button);
         this.loginLink = findViewById(R.id.reg_login_button);
+    }
+
+    public void clickRegButton(View view) {
+        finish();
+        Toast.makeText(this, "Заявка на регистрация отправлена!", Toast.LENGTH_LONG).show();
+    }
+
+    public void clickLinkLogin(View view) {
+        finish();
     }
 }
