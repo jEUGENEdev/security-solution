@@ -28,4 +28,11 @@
     <string name="nav_item_new_hint">Новый</string>
     <string name="nav_item_notifications_hint">Уведомления</string>
     <string name="nav_item_logout_hint">Выйти</string>
+    <string name="greeting_profile">Профиль</string>
+    <string name="profile_cancel">Отмена</string>
+    <string name="change_photo_profile">Изменить фотографию профиля</string>
+    <string name="input_field_fullname_label">Имя и фамилия</string>
+    <string name="input_field_fullname_hint">John Smith</string>
+    <string name="profile_input_field_phone_hint">+79100000000</string>
+    <string name="save_changes_button">Сохранить изменения</string>
 </resources>
