@@ -8,6 +8,7 @@ public final class OrganizationManager implements GetOrganizations {
     private final List<Organization> data = new ArrayList<>();
 
     public OrganizationManager() {
+        this.data.add(new Organization("Предприятие общепита", "Россия, г. Краснодар, ул. Красная, д. 1"));
         this.data.add(new Organization("Мастерская", "Россия, г. Краснодар, ул. Красная, д. 115"));
         this.data.add(new Organization("Дом Культуры", "Россия, г. Краснодар, ул. Красная, д. 132"));
         this.data.add(new Organization("Театр", "Россия, г. Краснодар, ул. Красная, д. 134"));

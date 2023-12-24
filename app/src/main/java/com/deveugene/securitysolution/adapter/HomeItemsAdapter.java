@@ -1,5 +1,6 @@
 package com.deveugene.securitysolution.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.deveugene.securitysolution.R;
+import com.deveugene.securitysolution.activity.ObjectActivity;
 import com.deveugene.securitysolution.adapter.factory.ItemsResourceFactory;
 import com.deveugene.securitysolution.entity.ItemEntity;
 import com.deveugene.securitysolution.entity.notification.Notification;
@@ -85,8 +87,15 @@ public class HomeItemsAdapter<T extends ItemEntity> extends RecyclerView.Adapter
     static class OrganizationHolder extends ItemHolder {
         public OrganizationHolder(@NonNull View itemView) {
             super(itemView);
+
             super.title = itemView.findViewById(R.id.organizationTitle);
             super.subTitle = itemView.findViewById(R.id.organizationAddress);
+
+            postCreate(itemView);
+        }
+
+        private void postCreate(View view) {
+            view.setOnClickListener(v -> v.getContext().startActivity(new Intent(v.getContext(), ObjectActivity.class)));
         }
     }
 }

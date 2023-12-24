@@ -1,12 +1,17 @@
 package com.deveugene.securitysolution.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.deveugene.securitysolution.R;
 
@@ -30,5 +35,35 @@ public class ObjectActivity extends AppCompatActivity {
         this.objectAddress = findViewById(R.id.objectAddress);
         this.camsHostAddress = findViewById(R.id.objectCamsHostAddress);
         this.save = findViewById(R.id.objectSave);
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+
+        this.objectTitle.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override
+            public void afterTextChanged(Editable s) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                ObjectActivity.this.inputObjectTitle(ObjectActivity.this.objectTitle, s.toString());
+            }
+        });
+    }
+
+    private void inputObjectTitle(View view, String text) {
+        this.title.setText(text);
+    }
+
+    public void clickCancelButton(View view) {
+        finish();
+    }
+
+    public void clickSaveButton(View view) {
+        finish();
+        Toast.makeText(this, "Заявка на добавление объекта была отправлена!", Toast.LENGTH_LONG).show();
     }
 }
