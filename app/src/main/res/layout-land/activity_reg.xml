@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reg_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="clickLinkLogin"
+        android:text="@string/login_hint_reg"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/reg_reg_button"
+        app:layout_constraintStart_toStartOf="@+id/reg_reg_button"
+        app:layout_constraintTop_toBottomOf="@+id/reg_reg_button" />
+
+    <Button
+        android:id="@+id/reg_reg_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:onClick="clickRegButton"
+        android:padding="15dp"
+        android:text="@string/reg_btn_hint"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/reg_confirm_password"
+        app:layout_constraintStart_toStartOf="@+id/reg_number_phone"
+        app:layout_constraintTop_toBottomOf="@+id/reg_number_phone" />
+
+    <EditText
+        android:id="@+id/reg_number_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_phone_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/reg_username"
+        app:layout_constraintStart_toStartOf="@+id/reg_username"
+        app:layout_constraintTop_toBottomOf="@+id/reg_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/input_field_phone_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_number_phone"
+        app:layout_constraintStart_toStartOf="@+id/reg_number_phone" />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_username_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/reg_last_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_first_name"
+        app:layout_constraintTop_toTopOf="@+id/reg_confirm_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/input_field_username_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_username"
+        app:layout_constraintStart_toStartOf="@+id/reg_username" />
+
+    <EditText
+        android:id="@+id/reg_confirm_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_confirm_password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/reg_password"
+        app:layout_constraintStart_toStartOf="@+id/reg_password"
+        app:layout_constraintTop_toBottomOf="@+id/reg_password" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/input_field_confirm_password_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_confirm_password"
+        app:layout_constraintEnd_toEndOf="@+id/reg_confirm_password" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/reg_last_name"
+        app:layout_constraintTop_toTopOf="@+id/reg_last_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/input_field_password_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_password"
+        app:layout_constraintStart_toStartOf="@+id/reg_password" />
+
+    <EditText
+        android:id="@+id/reg_last_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_last_name_hint"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/reg_first_name"
+        app:layout_constraintTop_toTopOf="@+id/reg_first_name" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/input_field_last_name_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_last_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_last_name" />
+
+    <EditText
+        android:id="@+id/reg_first_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input_field_border_style"
+        android:ems="10"
+        android:hint="@string/input_field_first_name_hint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/input_field_first_name_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_first_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_first_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
