@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.deveugene.securitysolution.R;
 import com.deveugene.securitysolution.security.AuthResponse;
+import com.deveugene.securitysolution.security.Roles;
 import com.deveugene.securitysolution.security.SecurityManager;
 import com.deveugene.securitysolution.security.UserData;
 import com.deveugene.securitysolution.storage.Keys;
@@ -62,7 +63,13 @@ public class LoginActivity extends AppCompatActivity {
         AuthResponse authResponse = security.authenticate(data);
         if (authResponse.isAuth()) {
             localStorage.putBoolean(Keys.IS_AUTH.name(), true);
-            startActivity(new Intent(this, HomeActivity.class));
+
+            if (authResponse.getRole() == Roles.USER){
+                startActivity(new Intent(this, HomeActivity.class));
+            } else if (authResponse.getRole() == Roles.ADMIN) {
+                startActivity(new Intent(this, AdminActivity.class));
+            }
+
             finish();
         } else {
             new AlertDialog.Builder(this)

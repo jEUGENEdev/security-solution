@@ -15,7 +15,7 @@ public class Response implements AuthResponse {
         tmpUserData.put("zhenya", data);
         data = new ArrayList<>();
         data.add("123");
-        data.add("USER");
+        data.add("ADMIN");
         tmpUserData.put("admin", data);
     }
 
